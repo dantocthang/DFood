@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/vendor/fontawesome-free-6.0.0-web/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="grid wide">
+            <div class="app__container">
+                <header class="header">
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="" class="logo__img">
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="" class="nav__item-link">Home</a></li>
+                            <li class="nav__item"><a href="" class="nav__item-link">Menu</a></li>
+                            <li class="nav__item"><a href="" class="nav__item-link">Service</a></li>
+                            <li class="nav__item"><a href="" class="nav__item-link">Product</a></li>
+                            <li class="nav__item"><a href="" class="nav__item-link">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <label for="mobile-checkbox" class="mobile-nav__label mobile-bars hide-on-pc"><i
+                            class="fa-solid fa-bars-staggered"></i></label>
+                    <input type="checkbox" class="mobile-nav__input" id="mobile-checkbox" hidden>
+                    <nav class="mobile-nav">
+                        <label for="mobile-checkbox" class="mobile-nav__label mobile-nav__close"><i class="fa-solid fa-xmark"></i></label>
+                        <ul class="mobile-nav__list">
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Home</a></li>
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Menu</a></li>
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Service</a></li>
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Product</a></li>
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <label for="mobile-checkbox" class="modal"></label>
+
+                    <div class="tools">
+                        <div class="tools__search">
+                            <i class="fa-solid fa-magnifying-glass tools__search-icon"></i>
+                            <input type="text" class="tools__search-input" placeholder="Search" autocomplete="off">
+                        </div>
+
+                        <div class="tools__cart">
+                            <i class="fa-solid fa-cart-shopping tools__cart-icon"></i>
+                            <div class="tools__cart-number"><span>1</span></div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="intro">
+                    <div class="row">
+                        <div class="col c-12 m-12 l-6">
+                            <div class="intro__content">
+                                <div class="intro__sample">
+                                    <span>Let's be vegan</span>
+                                    <img src="./assets/img/sample.jpg" alt="">
+                                </div>
+                                <div class="intro__sologan">
+                                    We ready to <br /> supply vegan food <br /> for you <span>anytime</span>
+                                </div>
+                                <div class="intro__text">
+                                    The food we provide is supplied directly from the our garden, we guarantee the
+                                    quality and freshness.
+                                </div>
+                                <div class="intro__buttons">
+                                    <a href="" class="intro__button">Shop now <span><i
+                                                class="fa-solid fa-chevron-right"></i></span></a>
+                                    <a href="" class="intro__button intro__button-hollow"><span><i
+                                                class="fa-solid fa-play"></i></span> New menu</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col c-12 m-12 l-6">
+                            <div class="intro__image">
+                                <img src="./assets/img/vegan.png" alt="" class="intro__image-img">
+                                <img src="./assets/img/comment.png" alt="" class="intro__image-icon">
+                                <img src="./assets/img/like.png" alt="" class="intro__image-icon">
+                                <img src="./assets/img/smile.png" alt="" class="intro__image-icon">
+                                <div class="fast-delivery hide-on-mobile">
+                                    <img src="./assets/img/clock.png" alt="">
+                                    <span>Fast delivery</span>
+                                </div>
+                                <div class="rating hide-on-mobile">
+                                    <img src="./assets/img/user.png" alt="">
+                                    <div class="rating-content">
+                                        <p class="username">Roland Smith</p>
+                                        <p class="comment">Healthy and delicious foods</p>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro__product">
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="intro__product-item">
+                                            <div class="intro__product-image">
+                                                <img src="./assets/img/food1.jpg" alt="">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col l-9">
+                                                    <div class="intro__product-description">
+                                                        <p class="intro__product-name">Brociol & Mushrooms</p>
+
+                                                        <p class="intro__product-subname">
+                                                            with Basil Vinaigrette
+                                                        </p>
+                                                        <p class="intro__product-price">
+                                                            <i class="fa-solid fa-dollar-sign"></i>
+                                                            22.00
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3">
+                                                    <div class="intro__product-cart">
+                                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                                        <span><i class="fa-solid fa-plus"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="intro__product-item">
+                                            <div class="intro__product-image">
+                                                <img src="./assets/img/food2.jpg" alt="">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col l-9">
+                                                    <div class="intro__product-description">
+                                                        <p class="intro__product-name">Brociol & Mushrooms</p>
+
+                                                        <p class="intro__product-subname">
+                                                            with Basil Vinaigrette
+                                                        </p>
+                                                        <p class="intro__product-price">
+                                                            <i class="fa-solid fa-dollar-sign"></i>
+                                                            22.00
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-3">
+                                                    <div class="intro__product-cart">
+                                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                                        <span><i class="fa-solid fa-plus"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
