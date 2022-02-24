@@ -73,6 +73,10 @@
     .sign-up__content{
         padding: 0 1.5rem;
     }
+
+    .intro__product-image{
+        height: 360px;
+    }
 }
 
 /* Tablet and Mobile */

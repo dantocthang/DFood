@@ -249,7 +249,7 @@
 
 .intro__image-icon:nth-child(3) {
     top: 34%;
-    right: -2%;
+    right: 1%;
     transform: rotate(45deg);
 
 }
@@ -330,19 +330,34 @@
     overflow: hidden;
     box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
     position: relative;
+    display: block;
+    text-decoration: none;
+    color: unset;
+    transition: background-color 200ms ease-in-out;
 }
+
+
 
 .intro__product-image {
     height: 160px;
     border-radius: 0.5rem;
     overflow: hidden;
+    
 }
 
 .intro__product-image>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 200ms ease-in-out;
+}
 
+.intro__product-item:hover > .intro__product-image >img{
+    transform: scale(1.2);
+}
+
+.intro__product-item:hover{
+    background-color:#f8efe7;
 }
 
 .intro__product-description {
@@ -356,7 +371,13 @@
 .intro__product-name {
     font-weight: 700;
     font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
 }
+
 
 .intro__product-subname {
     font-family: poppins;
@@ -489,10 +510,10 @@
     gap: 1.5rem;
     padding: 0 1rem;
     z-index: 2;
-    
+
 }
 
-.sign-up__sologan{
+.sign-up__sologan {
     z-index: 4;
     font-size: 2.3rem;
     font-family: Quicksand;
@@ -500,7 +521,7 @@
     color: #5191e0;
 }
 
-.sign-up__line{
+.sign-up__line {
     width: 40px;
     height: 2000px;
     background-color: #fff;
@@ -512,13 +533,13 @@
     box-shadow: 60px 0 0 0 #fff, 120px 0 0 0 #fff, -60px 0 0 0 #fff, -120px 0 0 0 #fff;
 }
 
-.sign-up__image img{
+.sign-up__image img {
     width: 100%;
     height: 54%;
     object-fit: cover;
     border-radius: 1.5rem;
     z-index: 2;
-    
+
 }
 
 .sign-up__wrapper {
@@ -634,8 +655,89 @@
     color: #fff;
     font-size: 1.2rem;
     border-radius: 1rem;
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     transition: background 200ms ease-in-out;
     position: relative;
 }
 
+/* Restaurant Grid */
+.restaurants{
+
+}
+
+.restaurants__toolbar{
+    height: 3rem;
+}
+
+.restaurants__filter{
+
+}
+
+.restaurants__grid{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurants__item{
+    display: block;
+    text-decoration: none;
+    color: unset;
+    width: 100%; 
+    height: 240px;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    transition: background 200ms linear;
+}
+
+.restaurants__item:hover{
+    background-color:#f8e3e6;
+}
+
+.restaurants__item-image{
+    width: 100%;
+    height: 154px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-width: 4px;
+    border-color: transparent;
+    border-style: solid;
+    transition: border-color 200ms ease-out;
+}
+
+.restaurants__item:hover > .restaurants__item-image{
+    border-color:  #8371b4;
+}
+
+.restaurants__item:hover > .restaurants__item-image > img{
+    transform: scale(1.2) rotate(10deg);
+}
+
+.restaurants__item-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 200ms ease-in-out;
+}
+
+.restaurants__item-description{
+    font-family: quicksand;
+    margin-top: 0.75rem;
+}
+
+.restaurants__item-name{
+    color: #2c2b30;
+    font-weight: 600;
+}
+
+.restaurants__item-address{
+    color: #777;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
