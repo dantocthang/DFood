@@ -675,8 +675,12 @@
 
 .restaurants__grid{
     margin-top: 1rem;
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem; */
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .restaurants__item{
@@ -688,6 +692,9 @@
     padding: 0.75rem;
     border-radius: 0.75rem;
     transition: background 200ms linear;
+    box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.1);
+    margin-top:1rem;
+    overflow: hidden;
 }
 
 .restaurants__item:hover{
