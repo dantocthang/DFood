@@ -14,6 +14,10 @@
     box-shadow: 4px 5px 42px -4px #ffa2b3
 }
 
+button{
+    cursor: pointer;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -639,3 +643,117 @@
     position: relative;
 }
 
+/* Log in */
+body{
+    background-image: url(/DFood/assets/img/login/background.jpg);
+}
+
+.log-in{
+    position: relative;
+    max-width: 500px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    transform: translateY(50%);
+}
+
+.log-in__heading{
+    font-size: 50px;
+    font-size: 3rem;
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.log-in__socials{
+    display: flex;
+    justify-content: space-between;
+}
+
+.log-in__socials-google,
+.log-in__socials-facebook {
+    border-radius: 8px;
+    border: 1px solid #F0EFF0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.log-in__socials-google img,
+.log-in__socials-facebook img {
+    width: 28px;
+    height: 28px;
+    margin-right: 0.75rem;
+}
+
+.log-in__or{
+    text-align: center;
+    font-size: 3rem;
+    color: #B0AEAF;
+    padding-top: 20px;
+}
+
+.log-in__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.log-in__form-group {
+    position: relative;
+}
+
+.log-in__input {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #EAE9EB;
+    height: 40px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: border-color 200ms ease-out;
+}
+
+.log-in__input:focus {
+    border-color: #FFB7C3;
+}
+
+.log-in__form-label {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    color: #bdbdbe;
+    pointer-events: none;
+    transition: top 200ms ease-in-out, color 200ms linear;
+}
+
+.log-in__input:not(:placeholder-shown)+.log-in__form-label,
+.log-in__input:focus+.log-in__form-label {
+    top: -5px;
+    color: #faabb9;
+}
+
+
+.log-in__form-submit {
+    align-items: center;
+    width: 95%;
+    height: 48px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    transition: background 200ms ease-in-out;
+    position: relative;
+    margin: 10px 10px;
+    padding: 0px;
+}
