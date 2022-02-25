@@ -4,7 +4,8 @@
     --text-color: #342e48;
 }
 
-html * {
+
+html *, body *, *, span,p,label {
     font-family: quicksand;
     font-weight: 500;
 }
@@ -66,4 +67,20 @@ table {
 input[type="password"] {
     font-family: Verdana;
     letter-spacing: 0.125em;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.gap-2{
+    gap: 2rem;
 }

@@ -11,6 +11,14 @@
         display: none;
     }
 
+    .mt-m-1 {
+        margin-top: 1rem;
+    }
+
+    .mt-m-2 {
+        margin-top: 2rem;
+    }
+
     .rating {
         right: -8%;
     }
@@ -26,12 +34,45 @@
     .intro__image {
         margin-top: 2rem;
     }
+
+    .facebook-page {
+        width: 250px;   
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer__users-wrapper{
+        margin: 1.5rem auto;
+    }
+
+    .footer__fanpage{
+        margin-top: 2rem;
+        text-align: center;
+
+        
+    }
+
+    
 }
 
 /* Mobile */
 @media (max-width: 740px) {
     .hide-on-mobile {
         display: none;
+    }
+
+    .mt-c-1 {
+        margin-top: 1rem;
+    }
+
+    .mt-c-2 {
+        margin-top: 2rem;
+    }
+
+    .app {
+        padding: 0.5rem;
     }
 
     .intro__sologan {
@@ -70,13 +111,27 @@
         --mobile-nav-width: 100%;
     }
 
-    .sign-up__content{
+    .sign-up__content {
         padding: 0 1.5rem;
     }
 
-    .intro__product-image{
+    .intro__product-image {
         height: 360px;
     }
+
+    .restaurants__toolbar {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .footer__lower {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    
 }
 
 /* Tablet and Mobile */
@@ -93,11 +148,11 @@
         display: none;
     }
 
-    .sign-up{
+    .sign-up {
         padding-top: 2rem;
     }
 
-    .sign-up__heading{
+    .sign-up__heading {
         text-align: center;
     }
 
@@ -124,7 +179,3 @@
         justify-content: center;
     }
 }
-
-
-/* Low resolution pc */
-@media (max-width: px) {}
