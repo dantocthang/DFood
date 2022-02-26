@@ -495,7 +495,7 @@
 
 /* Sign up */
 
-.sign-up {
+.sign-up, .login-wrapper {
     font-family: quicksand;
     background: linear-gradient(to top left, #ffe6d0 0%, #ffb4c3 102%);
     position: relative;
@@ -896,12 +896,14 @@
 /* Log in */
 .log-in{
     position: relative;
-    max-width: 500px;
+    max-width: 560px;
     align-items: center;
     background-color: #fff;
     border-radius: 20px;
-    margin: auto;
-    transform: translateY(50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .log-in__heading{
@@ -938,7 +940,7 @@
 
 .log-in__or{
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #B0AEAF;
     padding-top: 20px;
 }
@@ -946,7 +948,7 @@
 .log-in__form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     padding: 20px;
 }
 

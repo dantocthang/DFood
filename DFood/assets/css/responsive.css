@@ -131,6 +131,12 @@
         margin-bottom: 2rem;
     }
 
+    .login-wrapper{
+        padding: 0 0.75rem;
+    }  
+    
+    
+
     
 }
 
@@ -169,7 +175,8 @@
         /*  padding-top: 2rem; */
     }
 
-    .sign-up__socials {
+    .sign-up__socials,
+    .log-in__socials {
         flex-direction: column;
         gap: 1rem;
     }
