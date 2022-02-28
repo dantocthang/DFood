@@ -1005,3 +1005,267 @@
     margin: 10px 10px;
     padding: 0px;
 }
+
+/* Restaurant detail */
+.detail{
+    margin-top: 2.5rem;
+    font-family: quicksand;
+    font-weight: 500;
+}
+
+.detail__image{
+    width: 100%;
+    max-height: 270px;
+}
+
+.detail__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail__description{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.detail__description-path{
+    color: #187caa;
+}
+
+.detail__description-path-link{
+    color: unset;
+    text-decoration: none;
+}
+
+.detail__description-type{
+    display: flex;
+    gap: 1rem;
+}
+
+.detail__description-type span{
+    color:   #8b788b;
+}
+
+.detail__description-type-like{
+    background-color: #f13233;
+    font-size: 0.8rem;
+    color: #fff;
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+}
+
+.detail__description-name{
+    color: #2a2a2a;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.detail__description-address{
+    font-size: 0.9rem;
+}
+
+.detail__description-rating,
+.detail__description-avalibility{
+    display: flex;
+    gap: 1rem;
+}
+
+.detail__description-stars i{
+    color: #ffc107;
+}
+
+.detail__description-stars i.no-fill{
+    color: #ddd;
+}
+
+.detail__description-time{
+
+}
+
+.detail__description-time > i{
+    margin-right: 0.5rem;
+}
+
+.detail__description-status{
+    color: #6bc943;
+}
+
+.detail__description-status > i{
+    font-size: 0.7rem;
+}
+
+.detail__description-status span{
+    font-weight: 500;
+}
+
+.detail__description-status span > i{
+    color: #a59f9c;
+}
+
+.detail__description-status--deactived{
+
+}
+
+.detail__description-price-range{
+    color: #8d807c;
+}
+
+
+
+.menu__food-image{
+    min-width: 80px;
+    height: 80px;
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+}
+
+.menu-title{
+    font-family: railways;
+    color: #D14F54;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+.menu{
+
+}
+
+.menu__list{
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
+.menu__item{
+    margin-bottom: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.menu__item-link{
+    display: block;
+    width: fit-content;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9C6F70;
+    border-radius:0.5rem;
+    
+}
+
+.menu__item:first-child .menu__item-link{
+    background-color: #ADC3C9;
+    color: #fff
+}
+
+.menu-content{
+
+}
+
+.menu__search-bar{
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #fff;
+}
+
+.menu__search-icon{
+    
+}
+
+.menu__search-input{    
+    width: calc(100% - 40px);
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+.menu__food{
+
+}
+
+.menu__food-title{
+    color: #B25791;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.menu__food-list{
+
+}
+
+.menu__food-item{
+    display: flex;
+    gap: 1.25rem;
+}
+
+.menu__food-info{
+    display: flex;
+    gap: 0.75rem;
+}
+
+.menu__food-name-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 0.5rem;
+    flex: 8;
+}
+
+.menu__food-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+    color: unset;
+    text-decoration: none;
+}
+
+.menu__food-description{
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.menu__food-price{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d96d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.menu__food-price > span{
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+}
+
+.menu__food-get-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.menu__food-get-link{
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #b25791;
+}

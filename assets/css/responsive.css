@@ -134,6 +134,11 @@
     .login-wrapper{
         padding: 0 0.75rem;
     }  
+
+    .detail{
+        display: flex;
+        flex-direction: column;
+    }
     
     
 

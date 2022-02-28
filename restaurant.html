@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/vendor/fontawesome-free-6.0.0-web/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="grid wide">
+            <div class="app__container">
+                <header class="header">
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="" class="logo__img">
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="" class="nav__item-link">Home</a></li>
+                            <li class="nav__item"><a href="" class="nav__item-link">Menu</a></li>
+                            <li class="nav__item"><a href="" class="nav__item-link">Service</a></li>
+                            <li class="nav__item"><a href="" class="nav__item-link">Product</a></li>
+                            <li class="nav__item"><a href="" class="nav__item-link">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <label for="mobile-checkbox" class="mobile-nav__label mobile-bars hide-on-pc"><i
+                            class="fa-solid fa-bars-staggered"></i></label>
+                    <input type="checkbox" class="mobile-nav__input" id="mobile-checkbox" hidden>
+                    <nav class="mobile-nav">
+                        <label for="mobile-checkbox" class="mobile-nav__label mobile-nav__close"><i
+                                class="fa-solid fa-xmark"></i></label>
+                        <ul class="mobile-nav__list">
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Home</a></li>
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Menu</a></li>
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Service</a></li>
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Product</a></li>
+                            <li class="nav__item"><a href="" class="mobile-nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <label for="mobile-checkbox" class="modal"></label>
+
+                    <div class="tools">
+                        <div class="tools__search">
+                            <i class="fa-solid fa-magnifying-glass tools__search-icon"></i>
+                            <input type="text" class="tools__search-input" placeholder="Search" autocomplete="off">
+                        </div>
+
+                        <div class="tools__cart">
+                            <i class="fa-solid fa-cart-shopping tools__cart-icon"></i>
+                            <div class="tools__cart-number"><span>1</span></div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="detail">
+                    <div class="row">
+                        <div class="col l-5 m-6 c-12">
+                            <div class="detail__image">
+                                <img src="https://images.foody.vn/res/g97/964132/prof/s640x400/image-db451904-200910115823.jpeg"
+                                    alt="" class="detail__img">
+                            </div>
+                        </div>
+                        <div class="col l-7 m-6 c-12">
+                            <div class="detail__description">
+                                <div class="detail__description-path">
+                                    <a href="/" class="detail__description-path-link">Home</a>
+                                    <span>>></span>
+                                    <a href="/" class="detail__description-path-link">Hà Nội</a>
+                                    <span>>></span>
+                                    <a href="/" class="detail__description-path-link">Cơm Ngọc Bích - Cơm gà & cơm
+                                        sườn</a>
+
+                                </div>
+                                <div class="detail__description-type">
+                                    <div class="detail__description-type-like">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                        Yêu thích
+                                    </div>
+                                    <span>Quán ăn</span>
+                                </div>
+                                <div class="detail__description-name">
+                                    Cơm Ngọc Bích - Cơm Gà & Cơm Sườn
+                                </div>
+                                <div class="detail__description-address">
+                                    Ki Ốt 9 CT1 B1 KĐT Xa La, Hà Đông, Hà Nội
+                                </div>
+                                <div class="detail__description-rating">
+                                    <div class="detail__description-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <span>87 đánh giá</span>
+                                </div>
+                                <div class="detail__description-avalibility">
+                                    <div class="detail__description-status">
+                                        <i class="fa-solid fa-circle-dot detail__description-status--active"></i>
+                                        <span>Mở cửa</span>
+                                    </div>
+                                    <div class="detail__description-time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>09:00 - 20:30</span>
+                                    </div>
+                                </div>
+                                <div class="detail__description-price-range">
+                                    <i class="fa-solid fa-dollar-sign detail__description-money"></i>
+                                    <span>30,000 - 100,000</span>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-title">Thực đơn</div>
+
+                    <div class="menu">  
+                        <div class="row">
+                            <div class="col l-3 m-0 c-0">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="/" class="menu__item-link">Deal diệu kỳ</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/" class="menu__item-link">Combo</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/" class="menu__item-link">Combo Cocacola Lorem ipsum dolor sit amet.</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/" class="menu__item-link">Cơm văn phòng</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/" class="menu__item-link">Đồ uống</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col l-9 m-12 c-12">
+                                <div class="menu-content">
+                                    <div class="menu__search-bar">
+                                        <i class="fa-solid fa-magnifying-glass menu__search-icon"></i>
+                                        <input type="text" class="menu__search-input" placeholder="Tìm món...">
+                                    </div>
+                                    <div class="menu__food">
+                                        <div class="menu__food-title">Deal diệu kỳ</div>
+                                        <ul class="menu__food-list">
+                                            <li class="menu__food-item">
+                                                <div class="menu__food-image" style="background-image: url(https://images.foody.vn/res/g97/964132/s120x120/b208c284-4ff4-42ed-b59e-ed74a8a1-8ba6b336-201211095840.jpeg)">
+                                                </div>
+                                                <div class="menu__food-info">
+                                                    <div class="menu__food-name-wrap">
+                                                        <a href="/" class="menu__food-name">
+                                                            Cơm thịt kho Tàu trứng
+                                                        </a>
+                                                        <div class="menu__food-description">
+                                                            Chỉ còn 10K khi nhập mã COKE25 | Giảm 25K cho đơn từ 35K. Áp dụng từ 24/12 - 31/12. Số lượng ưu đãi có hạn.
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu__food-price">
+                                                        41,300 <span>đ</span>
+                                                    </div>
+                                                    <div class="menu__food-get-button">
+                                                        <a href="" class="menu__food-get-link">
+                                                            <i class="fa-solid fa-plus"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <div class="row">
+
+                        <div class="col l-4 m-6 c-12">
+                            <img src="./assets/img/logo.png" alt="" class="footer__logo mt-c-2">
+                        </div>
+                        <div class="col l-4 m-6 c-12 justify-center d-flex gap-2 mt-c-2">
+                            <img class="footer__icon" src="./assets/img/footer-restaurant.png" alt="">
+                            <div class="footer__places">
+                                <div class="footer__places-number">23488 Địa điểm</div>
+                                <p>Toàn quốc</p>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12 justify-center d-flex gap-2 mt-m-1 mt-c-2 footer__users-wrapper">
+                            <img class="footer__icon" src="./assets/img/footer-user.png" alt="">
+                            <div class="footer__users">
+                                <div class="footer__user-number">1,543,456 người sử dụng</div>
+                                <p>Trong và ngoài nước</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row footer__lower">
+
+                        <div class="col l-6 m-6 c-12">
+                            <div class="footer__properties">
+                                <div class="footer__properties-heading mt-c-2">
+                                    Thông tin liên hệ
+                                </div>
+                                <div class="footer__properties-name">
+                                    Công ty cổ phần FFood
+                                </div>
+                                <div class="footer__propeties-contact">
+                                    <div class="footer__phone">
+                                        <span>Số điện thoại:</span> 0379015044
+                                    </div>
+                                    <div class="footer__email">
+                                        <span>Email:</span> danb1910203@student.ctu.edu.vn
+                                    </div>
+                                    <div class="footer__address">
+                                        <span>Địa chỉ: </span>Khu II, Đ. 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__discovery">
+                                <div class="footer__discovery-heading mt-c-2">Khám phá</div>
+                                <div class="footer__discovery-group">
+                                    <a href="/" class="footer__discovery-link">Ứng dụng mobile</a>
+                                    <a href="/" class="footer__discovery-link">Viết bình luận</a>
+                                    <a href="/" class="footer__discovery-link">Phần thưởng</a>
+                                    <a href="/" class="footer__discovery-link">Bảo mật thông tin</a>
+                                    <a href="/" class="footer__discovery-link">Quy định</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-12 c-12">
+                            <div class="footer__fanpage">
+                                <div class="footer__fanpage-heading mt-c-2">Fanpage</div>
+                                <iframe class="facebook-page"
+                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fffood&tabs=timeline&width=260&height=260&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                    width="240" height="260" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowfullscreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
