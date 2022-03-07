@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1200px;
+            height: 600px;
+            margin-inline: auto;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 3fr 1fr 3fr;
+        }
+        .grid {
+            background-color: rgb(84, 183, 223);
+            border: 2px solid #000;
+        }
+
+        .grid-1{
+            grid-column: 1 / span 2;
+            grid-row: 1 / 1;
+        }
+        .grid-2{
+            grid-column: 3 / 4;
+            grid-row: 1 / span 2;
+        }
+        .grid-3{
+            grid-column: 4 / -1;
+            grid-row: 1 / span 2;
+        }
+        .grid-4{
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 2;
+        }
+        .grid-5{
+            grid-column: 2 / span 1;
+            grid-row: 2 / span 2;
+        }
+        .grid-6{
+            grid-column: 3 / span 2;
+            grid-row: 3 / span 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid grid-1">Grid item 1</div>
+        <div class="grid grid-2">Grid item 2</div>
+        <div class="grid grid-3">Grid item 3</div>
+        <div class="grid grid-4">Grid item 4</div>
+        <div class="grid grid-5">Grid item 5</div>
+        <div class="grid grid-6">Grid item 6</div>
+    </div>
+</body>
+
+</html>

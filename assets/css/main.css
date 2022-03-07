@@ -1,7 +1,7 @@
 .app {
     background: linear-gradient(to bottom right, #ffe6d0 0%, #ffb4c3 102%);
     padding-top: 3rem;
-   
+    padding-bottom: 3rem;
 
 }
 
@@ -1201,7 +1201,9 @@
 }
 
 .menu__food-list{
-
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .menu__food-item{
@@ -1269,3 +1271,5 @@
     color: #fff;
     background-color: #b25791;
 }
+
+

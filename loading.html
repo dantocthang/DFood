@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            
+        }
+        .loader div {
+            position: absolute;
+            display: inline-block;
+        }
+
+        .loader div:nth-child(1) {
+            background-color: #2FFFFB;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: float 2s infinite linear;
+            box-shadow: 0 2px 20px 5px #91dddc;
+        }
+
+        .loader div:nth-child(2) {
+            background-color: #F60043;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            animation: float 2s infinite linear;
+            animation-delay: -1s;
+            box-shadow: 0 2px 20px 5px #ec96ad;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateX(0);
+                z-index: 0;
+                /* opacity: 0; */
+            }
+
+            25%{
+                transform: translateX(50px) scale(0.8);
+            }
+
+            49%{
+                transform: translateX(100px);
+                z-index: 0;
+            }
+
+            51% {
+                transform: translateX(100px);
+                z-index: 1;
+                /* opacity: 1; */
+            }
+
+            75%{
+                transform: translateX(50px) scale(1.2);
+            }
+
+            100% {
+                transform: translateX(0);
+                z-index: 1;
+                /* opacity: 1; */
+            }
+        }
+
+        @keyframes float2{
+            0% {
+                transform: translateX(0);
+                z-index: 0;
+            }
+
+            20%{
+                transform: translateX(50px) scale(0.8);
+            }
+
+            30%{
+                transform: translateX(100px);
+                z-index: 0;
+            }
+
+            40%{
+                transform: translateX(100px);
+                z-index: 0;
+            }
+
+            50% {
+                transform: translateX(100px);
+                z-index: 1;
+            }
+
+            60%{
+                transform: translateX(50px) scale(1.2);
+            }
+
+            80% {
+                transform: translateX(0);
+                z-index: 1;
+                /* opacity: 1; */
+            }
+            100%{
+                transform: translateX(0);
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
