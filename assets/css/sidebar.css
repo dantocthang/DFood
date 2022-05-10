@@ -20,6 +20,8 @@ body{
     z-index: 9999;
 }
 
+
+
 .sidebar.minimize {
     /* width: 80px; */
     --sidebar-width: 80px;
@@ -177,6 +179,7 @@ body{
 
 .sidebar__menu-title {
     font-size: 1rem;
+    animation: fade 100ms ease-in-out 200ms;
 }
 
 .sidebar-bottom {
